@@ -1,40 +1,37 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diabetes Food Check</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Diabetes Food Check</title>
+  <meta name="description" content="Free educational food check for common breakfasts, snacks, fruits, grains, takeout, and drinks. See serving guidance, swaps, and plate-method placement. Not medical advice.">
+  
+  <!-- YOUR CORRECTED GOOGLE VERIFICATION & CLOUDFLARE TAGS -->
+  <meta name="google-site-verification" content="buUOa_47eNsdydkBIaRr3Lowq4Zafc_GBCVdmQYP9SE" />
+  <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "d3f2e9a9309a484d909629f1a7de2ced"}'></script><!-- End Cloudflare Web Analytics -->
 
-    <meta name="google-site-verification" content="buUOa_47eNsdydkBIaRr3Lowq4Zafc_GBCVdmQYP9SE" />
-    <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "d3f2e9a9309a484d909629f1a7de2ced"}'></script><!-- End Cloudflare Web Analytics -->
-    
-
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <main class="wrap">
+    <h1>Diabetes Food Check</h1>
+    <p class="sub">Type a common food and get a quick educational card with serving guidance, swaps, and plate-method placement. This is not medical advice.</p>
 
-    
-     <main style="max-width: 600px; margin: 40px auto; padding: 20px; font-family: system-ui, sans-serif; color: #333; line-height: 1.6;">
-        <h1 style="color: #007bff; text-align: center;">Diabetes Food Check</h1>
-        <p style="font-size: 18px; text-align: center; color: #555;">Manage your blood sugar with confidence using simple, real-food solutions.</p>
-        
-        <div style="background-color: #f8f9fa; border: 1px solid #e9ecef; border-radius: 8px; padding: 25px; margin: 30px 0; text-align: center;">
-            <h2 style="margin-top: 0; color: #212529;">Get Your Free Diabetes Plate Cheat Sheet!</h2>
-            <p>Learn how to balance your meals perfectly without cutting out your favorite flavors. Sign up below to get the download instantly.</p>
-            
-            <!-- Paste your MailerLite signup form here later -->
-            <p style="font-style: italic; color: #6c757d;">[Signup Form Placeholder]</p>
-        </div>
+    <input id="foodSearch" type="search" placeholder="Search a food" autocomplete="off">
 
-        <section style="margin-top: 40px;">
-            <h3>What We Offer:</h3>
-            <ul>
-                <li><strong>Food Database:</strong> Fast, easy breakdowns of carb counts and GI bands.</li>
-                <li><strong>Smart Food Swaps:</strong> Simple alternatives for high-glycemic foods.</li>
-                <li><strong>Plate Method Guides:</strong> Practical visual toolkits for everyday meal planning.</li>
-            </ul>
-        </section>
-    </main>
+    <div id="result" class="card hidden" role="status"></div>
 
+    <section class="cta">
+      <h2>Get the free plate-method cheat sheet</h2>
+      <p>Grab the printable one-page guide and twenty simple swaps.</p>
+      <a class="button" href="free-plate-cheat-sheet.html">Email me the free cheat sheet</a>
+    </section>
 
+    <footer class="tiny">
+      <p>Educational only. Talk with your care team before making diet changes.</p>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
 </body>
 </html>
