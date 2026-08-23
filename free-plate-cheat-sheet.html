@@ -6,26 +6,47 @@
   <title>Free Diabetes Plate Quick Check</title>
   <meta name="description" content="Get the free printable plate-method cheat sheet and twenty simple swaps. Educational only, not medical advice.">
   <link rel="stylesheet" href="style.css">
+  
+  <!-- MailerLite Universal Snippet tracking for your popup layout -->
+  <script>
+    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[]).push(arguments)},l=d.createElement(e),l.async=1,l.src=u,
+    n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n)})(window,document,'script','https://mailerlite.com');
+    ml('account', '2566568');
+  </script>
 </head>
 <body>
   <main class="wrap">
+    <!-- NAVIGATION BAR WITH HOME BUTTON -->
+    <nav style="margin-bottom: 20px; padding-bottom: 10px; border-bottom: 1px solid #ddd;">
+      <a href="index.html" class="button" style="background: #555; padding: 8px 12px; font-size: 14px; margin: 0;">← Back to Home Page</a>
+    </nav>
+
     <h1>Free Diabetes Plate Quick Check</h1>
     <p>Join the Diabetes Food Check list and get the printable plate-method cheat sheet. Use it on the fridge, in your bag, or on your phone when meals feel confusing. You also get twenty simple swap ideas. Educational only. Not medical advice.</p>
 
-    <div class="form-box">
-     
-<script>
-    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
-    .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
-    n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
-    (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
-    ml('account', '2566568');
-</script>
+    <!-- CLEAN DIRECT FORM LAYOUT -->
+    <div class="form-box" style="border: 1px solid #ccc; padding: 20px; background: #fff; border-radius: 8px;">
+      <form id="diabetes-signup-form" action="https://mailerlite.com" method="POST" target="_blank">
+        
+        <div style="margin-bottom: 15px;">
+          <label for="fields_email" style="display: block; margin-bottom: 5px; font-weight: bold;">Email Address *</label>
+          <input type="email" id="fields_email" name="fields[email]" required placeholder="you@example.com" style="width: 100%; padding: 10px; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px; font-size: 16px;">
+        </div>
 
-      
+        <div style="margin-bottom: 20px; display: flex; align-items: flex-start;">
+          <input type="checkbox" id="fields_consent" name="fields[consent]" required style="margin-top: 4px; margin-right: 10px;">
+          <label for="fields_consent" style="font-size: 14px; color: #444; line-height: 1.4;">
+            Yes, send me the free cheat sheet and the Diabetes Food Check newsletter. I can unsubscribe anytime. *
+          </label>
+        </div>
+
+        <button type="submit" style="width: 100%; padding: 12px; background-color: #1565c0; color: white; border: none; border-radius: 8px; font-size: 16px; cursor: pointer; font-weight: bold;">
+          Subscribe to Get Cheat Sheet
+        </button>
+      </form>
     </div>
 
-    <p>Already subscribed? Check your inbox for the welcome email.</p>
+    <p style="margin-top: 20px;">Already subscribed? Check your inbox for the welcome email.</p>
 
     <footer class="tiny">
       <p>Educational only. Talk with your care team before making diet changes.</p>
